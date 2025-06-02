@@ -15,8 +15,8 @@ source_option = st.sidebar.radio("📂 Choose PDF Source", ["Use sample PDFs", "
 # Upload or load sample PDFs
 if source_option == "Use sample PDFs":
     file_paths = [
-        "sample_pdfs/RA_12009_searchable.pdf",
-        "sample_pdfs/IRR_RA_12009_searchable.pdf"
+        "RA_12009_searchable.pdf",
+        "IRR_RA_12009_searchable.pdf"
     ]
     pdfs = [fitz.open(path) for path in file_paths]
 else:
